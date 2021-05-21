@@ -41,6 +41,7 @@
 	$shop_address = preg_replace('/ー/i', '-', $shop_address);
 	$parse_address = explode(' ', $shop_address);
 	$shop_address = mb_convert_kana($parse_address[0], 'asKV');
+	$shop_address = '"'.$shop_address.'"';
 
 	$csvdata .= sprintf("%d,%s,%s,%s,%s,%s\n", $id, $shop_name, $shop_category, $shop_fulladdress, $shop_post, $shop_address);
   }
