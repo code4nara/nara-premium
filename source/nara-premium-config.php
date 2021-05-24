@@ -1,5 +1,5 @@
 <?php
-  $prefix = "/home/shige";
+  $prefix = "..";
   $ids = range(1, 1800);
   
   $scraped_dir = "$prefix/data";
